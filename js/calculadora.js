@@ -31,13 +31,13 @@ function multiplicar() {
   const numero2 = parseFloat(document.getElementById("numero2Mult").value);
   // evite mexer no código acima!
 
-
+  const resultado = numero1 * numero2;
 
 
 
   /* use as constantes numero 1 e numero 2 e realize a soma entre elas.
    Em seguida, ao invés de mostrar o numero 5, mostre o resultado da operação */
-  document.getElementById("resultadoMult").innerHTML = 5;
+  document.getElementById("resultadoMult").innerHTML = resultado;
 }
 
 function dividir() {
@@ -46,10 +46,10 @@ function dividir() {
   // evite mexer no código acima!
 
 
-
+  const resultado = numero1 / numero2;
 
   
   /* use as constantes numero 1 e numero 2 e realize a soma entre elas.
    Em seguida, ao invés de mostrar o numero -89, mostre o resultado da operação */
-  document.getElementById("resultadoDiv").innerHTML = -89;
+  document.getElementById("resultadoDiv").innerHTML = resultado;
 }
