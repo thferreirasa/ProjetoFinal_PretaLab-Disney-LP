@@ -23,7 +23,11 @@ function calcularMedia() {
   let mensagem = "";
   // evite mexer no código acima!
 
-  if (media === 0) {
+  if (nota1 < 0 || nota2 < 0 || nota3 < 0 || nota4 < 0) {
+    alert("Não é permitido informar notas menores que zero!");
+  } else if (nota1 > 10 || nota2 > 10 || nota3 > 10 || nota4 > 10) {
+    alert("Não é permitido informar notas maiores que dez!");
+  } else if (media === 0) {
     mensagem = "Infelizmente você zerou a prova :(";
   } else if (media >= 0.1 && media <= 3) {
     mensagem = `Caramba, deu ruim, você obteve media ${media}! Estude mais e tente novamente!`;
